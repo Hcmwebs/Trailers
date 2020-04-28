@@ -1,83 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0 auto;
+  font-family: 'Roboto', 'Open Sans',sans-serif;
+}
+h1 {
+  font-weight: 600px;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.877);
+  margin: 10px;
+  padding: 5px;
 }
 .container {
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 .header-wrapper {
-  width: 100%;
+  min-width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
-  background: url("../Images/header-background.jpeg");
+  background: url("../Images/header-background.jpeg") no-repeat center
+    center/cover;
   flex-direction: column;
+}
+.header-wrapper:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(203, 241, 183, 0.13);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .nav-wrapper {
-  width:100%;
-  margin:0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .nav-items {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   list-style: none;
-  margin:0;
+  margin: 0;
   padding-left: 0;
-  background-color: rgba(255, 255, 255, 0.301);
   color: #000000;
 }
 .nav-item {
   font-size: 1.2rem;
-  font-weight: 200;
+  font-weight: 400;
   text-transform: capitalize;
   padding: 10px;
-  margin-left:10px;
+  margin-left: 10px;
 }
 .nav-item a{
+  font-size: 1.5rem;
   text-decoration: none;
-  color: #000000;
-  padding: 5px 10px;
-  transition: all 1.0s;
+  border-bottom: 2px solid transparent;
+  color: rgba(0, 0, 0, 0.877);
+  padding: 10px;
+  transition: all 0.5s ease;
 }
-.nav-item a:hover{
-  font-size:1rem;
-  text-decoration: underline;
+.nav-item a:hover {
+  font-size: 1rem;
+  border-bottom: #000;
 }
-
 
 /*++logo+++*/
-.logo-title-wrapper{
+.logo-title-wrapper {
   margin: 0 auto;
-
 }
 
-.logo-wrapper{
-  width:80px;
-  height:80px;
-  margin:0 auto;
-  padding-top: 20px;
+.logo-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
 }
 
-.logo-wrapper img{
+.logo-wrapper img {
   width: 100%;
   height: 100%;
 }
 /*++title+++*/
+.title-wrapper {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.socialMedia {
+  width: 100%;
+  margin: 0 auto;
+  color: olivedrab;
+  text-align: center;
+}
+.socialMedia a {
+  text-decoration: none;
+  background-color: transparent;
+  transition: all 0.5s ease;
+}
+.socialMedia a:hover {
+  background-color: olivedrab;
+}
+.fab{
+  color:rgba(0, 0, 0,0.877 );
