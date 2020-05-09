@@ -164,9 +164,11 @@ i.fab {
   padding: 0;
   background-color: var(--overlay-color);
   display: none;
+  transition: all 1s ease;
 }
 .open {
   display: inline-block;
+  transition: all 1s ease;
 }
 .hamburger-menu {
   height: 100%;
@@ -221,9 +223,6 @@ i.fab {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
   }
   .nav-wrapper #btn-primary {
     display: none;
@@ -250,7 +249,7 @@ section {
 #about-wrapper {
   margin: 0 auto;
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 .home-text-image,
 .about-text-image {
@@ -263,7 +262,6 @@ section {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 15px;
 }
 #about-wrapper {
   margin: 0 auto;
@@ -286,9 +284,26 @@ section {
   background-color: var(--overlay-color);
   border-color: var(--primary-color);
 }
+.footer-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--overlay-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 0;
+}
 
-@media screen and (max-width: 690px) {
-  .home-text-image,
-  .about-text-image {
+.footer-wrapper p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 690px) {
+  .footer-wrapper {
+    flex-direction: row;
   }
 }
